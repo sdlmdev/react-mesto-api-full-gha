@@ -17,7 +17,6 @@ const handleError = require('./middlewares/handleError');
 const auth = require('./middlewares/auth');
 const { validationLogin, validationCreateUser } = require('./middlewares/validation');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
-const { NotFoundError } = require('./errors/NotFoundError');
 const cors = require('./middlewares/cors');
 
 const app = express();
@@ -39,8 +38,6 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-startServer();
-
 app.use(requestLogger);
 app.use(cors);
 
@@ -57,9 +54,9 @@ app.use(auth);
 
 app.use('/cards', cardsRouter);
 app.use('/users', usersRouter);
-app.use('*', () => {
-  throw new NotFoundError('Запрашиваемый адрес не найден.');
-});
+
 app.use(errorLogger);
 app.use(errors());
 app.use(handleError);
+
+startServer();

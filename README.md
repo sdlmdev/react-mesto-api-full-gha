@@ -4,7 +4,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 158.160.56.116
+IP 158.160.56.116
 
 Frontend https://sdlmdev.nomoredomains.monster/
 
