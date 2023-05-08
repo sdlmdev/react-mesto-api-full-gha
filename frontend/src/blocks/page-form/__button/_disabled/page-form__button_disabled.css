@@ -1,0 +1,14 @@
+.page-form__button_disabled {
+  background-color: rgb(120, 120, 120);
+  border-radius: 2px;
+  pointer-events: none;
+  max-width: 358px;
+  min-height: 50px;
+}
+
+@media screen and (max-width: 596px) {
+  .page-form__button_disabled {
+    max-width: 260px;
+    min-height: 46px;
+  }
+}

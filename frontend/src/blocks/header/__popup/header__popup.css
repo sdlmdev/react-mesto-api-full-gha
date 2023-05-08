@@ -1,0 +1,13 @@
+.header__popup {
+  padding-top: 40px;
+  border-bottom: 1px solid #545454;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 596px) {
+  .header__popup {
+    display: none;
+  }
+}

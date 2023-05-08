@@ -1,0 +1,20 @@
+.profile__add {
+  all: unset;
+  background-image: url(../../../images/AddButton.svg);
+  min-height: 50px;
+  min-width: 150px;
+  transition: .5s ease-in-out;
+  background-repeat: no-repeat;
+}
+
+.profile__add:hover {
+  opacity: .6;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 596px) {
+  .profile__add {
+    background-image: url(../../../images/addBtn596.svg);
+    width: 100%;
+  }
+}

@@ -1,0 +1,9 @@
+.cards__text {
+  padding: 0;
+  margin: 22px 21px 22px;
+  height: 37px;
+  max-width: 246px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

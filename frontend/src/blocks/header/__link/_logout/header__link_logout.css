@@ -1,0 +1,9 @@
+.header__link_logout {
+  color: #A9A9A9;
+}
+
+@media screen and (max-width: 596px) {
+  .header__link_logout {
+    display: none;
+  }
+}

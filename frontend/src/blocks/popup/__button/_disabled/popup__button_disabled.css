@@ -1,0 +1,16 @@
+.popup__button_disabled {
+  background-color: white;
+  color: rgba(0, 0, 0, .2);
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 2px;
+  pointer-events: none;
+  max-width: 356px;
+  min-height: 48px;
+}
+
+@media screen and (max-width: 596px) {
+  .popup__button_disabled {
+    max-width: 236px;
+    min-height: 44px;
+  }
+}

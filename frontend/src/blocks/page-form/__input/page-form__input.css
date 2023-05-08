@@ -1,0 +1,13 @@
+.page-form__input {
+  all: unset;
+  text-align: left;
+  margin: 0 auto 0;
+  background-color: #000;
+  border-bottom: 2px solid #ccc;
+  padding: 0 0 7px;
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}

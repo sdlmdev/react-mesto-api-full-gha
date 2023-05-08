@@ -1,0 +1,7 @@
+.page-form__redirect_active {
+  transition: .5s ease-in-out;
+}
+
+.page-form__redirect_active:hover {
+  opacity: .6;
+}

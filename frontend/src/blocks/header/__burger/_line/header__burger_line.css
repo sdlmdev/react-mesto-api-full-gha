@@ -1,0 +1,26 @@
+.header__burger_line {
+  display: none;
+}
+
+@media screen and (max-width: 596px) {
+  .header__burger_line {
+    display: block;
+    background-color: #fff;
+    height: 3px;
+    width: 100%;
+    transition: all .3s ease-in-out;
+  }
+
+  .header__burger_open .header__burger_line:nth-child(1) {
+    transform: rotate(45deg) translateY(4px);
+  }
+  
+  .header__burger_open .header__burger_line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .header__burger_open .header__burger_line:nth-child(3) {
+    transform: rotate(-45deg) translateY(-4px);
+  }
+}
+

@@ -1,0 +1,19 @@
+.header__burger {
+  display: none;
+}
+
+@media screen and (max-width: 596px) {
+  .header__burger {
+    display: flex;
+    flex-direction: column;
+    width: 24px;
+    height: 20px;
+    cursor: pointer;
+    margin: 5px 30px 31px 0;
+    justify-content: space-between;
+  }
+
+  .header__burger_open {
+    justify-content: center;
+  }
+}
