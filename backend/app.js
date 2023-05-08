@@ -13,6 +13,7 @@ const {
   createUser,
   // logout,
 } = require('./controllers/users');
+const NotFoundError = require('./errors/NotFoundError');
 const handleError = require('./middlewares/handleError');
 const auth = require('./middlewares/auth');
 const { validationLogin, validationCreateUser } = require('./middlewares/validation');
@@ -54,6 +55,9 @@ app.use(auth);
 
 app.use('/cards', cardsRouter);
 app.use('/users', usersRouter);
+app.use('*', () => {
+  throw new NotFoundError('Запрашиваемый адрес не найден.')
+});
 
 app.use(errorLogger);
 app.use(errors());
