@@ -56,7 +56,7 @@ app.use(auth);
 app.use('/cards', cardsRouter);
 app.use('/users', usersRouter);
 app.use('*', () => {
-  throw new NotFoundError('Запрашиваемый адрес не найден.')
+  throw new NotFoundError('Запрашиваемый адрес не найден.');
 });
 
 app.use(errorLogger);
