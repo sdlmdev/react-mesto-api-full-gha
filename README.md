@@ -1,4 +1,4 @@
-[![Tests](../../actions/workflows/tests.yml/badge.svg)](../../actions/workflows/tests-13-sprint.yml)
+[![Tests](../../actions/workflows/tests.yml/badge.svg)](./actions/workflows/tests.yml)
 
 # [Проект Mesto фронтенд + бэкенд](https://github.com/sdlmdev/react-mesto-api-full-gha)
 # react-mesto-api-full

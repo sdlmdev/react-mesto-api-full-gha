@@ -1,5 +1,5 @@
 {
-  "name": "react-mesto",
+  "name": "react-mesto-api-full-gha",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

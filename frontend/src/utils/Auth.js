@@ -45,12 +45,3 @@ export const checkToken = (jwt) => {
     return getResponse(res);
   });
 };
-
-// export const logout = () => {
-//   return fetch(`${BASE_URL}/signout`, {
-//     method: "POST",
-//     credentials: "include",
-//   }).then((res) => {
-//     return getResponse(res);
-//   });
-// };

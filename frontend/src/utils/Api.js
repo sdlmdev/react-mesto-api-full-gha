@@ -19,14 +19,12 @@ class Api {
   getInitialCards(headers = this._headers) {
     return fetch(`${this._url}/cards`, {
       headers: headers,
-      // credentials: "include",
     }).then(this._getResponse);
   }
 
   getUserData() {
     return fetch(`${this._url}/users/me`, {
       headers: this._headers,
-      // credentials: "include",
     }).then(this._getResponse);
   }
 
@@ -35,7 +33,6 @@ class Api {
       method: "PATCH",
       headers: this._headers,
       body: JSON.stringify(profileData),
-      // credentials: "include",
     }).then(this._getResponse);
   }
 
@@ -44,7 +41,6 @@ class Api {
       method: "POST",
       headers: this._headers,
       body: JSON.stringify(cardData),
-      // credentials: "include",
     }).then(this._getResponse);
   }
 
@@ -52,7 +48,6 @@ class Api {
     return fetch(`${this._url}/cards/${cardId}`, {
       method: "DELETE",
       headers: this._headers,
-      // credentials: "include",
     }).then(this._getResponse);
   }
 
@@ -60,7 +55,6 @@ class Api {
     return fetch(`${this._url}/cards/${cardId}/likes`, {
       method: "PUT",
       headers: this._headers,
-      // credentials: "include",
     }).then(this._getResponse);
   }
 
@@ -68,7 +62,6 @@ class Api {
     return fetch(`${this._url}/cards/${cardId}/likes`, {
       method: "DELETE",
       headers: this._headers,
-      // credentials: "include",
     }).then(this._getResponse);
   }
 
@@ -77,7 +70,6 @@ class Api {
       method: "PATCH",
       headers: this._headers,
       body: JSON.stringify(link),
-      // credentials: "include",
     }).then(this._getResponse);
   }
 
@@ -92,7 +84,6 @@ class Api {
 export const configApi = new Api({
   url: "https://api.sdlmdev.nomoredomains.monster",
   headers: {
-    // authorization : `Bearer ${localStorage.getItem("jwt")}`,
     "Content-Type": "application/json",
   },
 });

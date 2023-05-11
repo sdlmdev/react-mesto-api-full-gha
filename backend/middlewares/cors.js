@@ -26,5 +26,5 @@ module.exports = (req, res, next) => {
     return res.end();
   }
 
-  next();
+  return next();
 };

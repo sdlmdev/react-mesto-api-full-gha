@@ -18,7 +18,6 @@ import {
   register,
   login,
   checkToken,
-  // logout,
 } from "../utils/Auth";
 
 function App() {
@@ -41,21 +40,6 @@ function App() {
   const [isConfirmPlacePopupOpen, setIsConfirmPlacePopupOpen] = useState(false);
 
   const jwt = localStorage.getItem("jwt");
-
-  // useEffect(() => {
-  //   if (localStorage.getItem('isLoggedIn') === 'true') {
-  //     Promise.all([configApi.getUserData(), configApi.getInitialCards()])
-  //       .then(([userData, cardsData]) => {
-  //         setCurrentUser(userData);
-  //         setCards(cardsData);
-
-  //         setUserEmail(userData.email);
-  //         setIsLoggedIn(true);
-  //         navigate("/");
-  //       })
-  //       .catch((err) => console.log(err));
-  //   }
-  // }, [isLoggedIn, navigate]);
 
   useEffect(() => {
     function handleClosePopup(e) {
@@ -87,7 +71,7 @@ function App() {
 
       configApi.getInitialCards({authorization: `Bearer ${jwt}`})
       .then((res) => {
-        setCards(res);
+        setCards(res.reverse());
       })
       .catch((err) => console.log(err));
     }
@@ -97,15 +81,6 @@ function App() {
     localStorage.removeItem("jwt");
     setIsLoggedIn(false);
     setUserEmail("");
-    
-    // logout()
-    // .then((res) => {
-    //   console.log(res.message);
-    //   localStorage.setItem("isLoggedIn", res.isLoggedIn);
-    //   setIsLoggedIn(false);
-    //   setUserEmail("");
-    // })
-    // .catch((err) => console.log(err));
   }
 
   function handleEditAvatarClick() {
@@ -226,8 +201,6 @@ function App() {
     setIsProcessStatus(true);
     login(password, email)
       .then((res) => {
-        // console.log(res.message);
-        // localStorage.setItem("isLoggedIn", res.isLoggedIn);
         localStorage.setItem("jwt", res.token);
         setIsLoggedIn(true);
         navigate("/");
