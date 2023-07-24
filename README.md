@@ -36,3 +36,5 @@
 * [Backend](https://api.sdlmdev.nomoredomains.monster/)
 * [Репозиторий Api](https://github.com/sdlmdev/express-mesto-gha)
 * [Репозиторий Frontend](https://github.com/sdlmdev/react-mesto-auth)
+
+### Статус проекта: завершен
