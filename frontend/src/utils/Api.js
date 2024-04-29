@@ -82,7 +82,7 @@ class Api {
 }
 
 export const configApi = new Api({
-  url: "https://api.sdlmdev.nomoredomains.monster",
+  url: "https://mesto.api.sdlmdev.site",
   headers: {
     "Content-Type": "application/json",
   },
