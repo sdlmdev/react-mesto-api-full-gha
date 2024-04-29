@@ -30,7 +30,6 @@ function PageWithForm({
             value={values.email || ""}
             onChange={handleInputChange}
           />
-
           <span className="popup__input-error email-input-error">
             {errors.email}
           </span>
@@ -46,7 +45,6 @@ function PageWithForm({
             value={values.password || ""}
             onChange={handleInputChange}
           />
-
           <span className="popup__input-error popup__input-error_password password-input-error">
             {errors.password}
           </span>
