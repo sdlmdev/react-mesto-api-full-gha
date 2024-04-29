@@ -1,4 +1,4 @@
-const BASE_URL = "https://api.sdlmdev.nomoredomains.monster";
+const BASE_URL = "https://mesto.api.sdlmdev.site";
 
 function getResponse(response) {
   if (response.ok) {

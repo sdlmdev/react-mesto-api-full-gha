@@ -1,8 +1,10 @@
 const allowedCors = [
-  'https://sdlmdev.nomoredomains.monster',
-  'http://sdlmdev.nomoredomains.monster',
-  'https://api.sdlmdev.nomoredomains.monster',
-  'http://api.sdlmdev.nomoredomains.monster',
+  'http://mesto.sdlmdev.site',
+  'https://mesto.sdlmdev.site',
+  'http://mesto.api.sdlmdev.site',
+  'https://mesto.api.sdlmdev.site',
+  'http://61076899295b.vps.myjino.ru',
+  'https://61076899295b.vps.myjino.ru',
   'https://localhost:3000',
   'http://localhost:3000',
 ];
